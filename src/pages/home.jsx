@@ -1,9 +1,15 @@
 import React from 'react';
+import Header from '../components/Header';
+import TweetEditor from '../components/TweetEditor';
+import Tweet from '../components/Tweet';
 
 function Home() {
   return (
     <main className="timeline">
-      <h1>Timeline here</h1>
+    <Header/>
+    <TweetEditor/>
+    <Tweet  title="CNN" />
+    <Tweet title="The New York Times"/>
     </main>
   );
 }
