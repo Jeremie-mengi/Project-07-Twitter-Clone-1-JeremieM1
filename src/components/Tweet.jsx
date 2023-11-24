@@ -1,49 +1,43 @@
-import Cnn from "../images/tweet-profile-photo.png";
-import Ver from "../Icons/Verified.png";
-import Name from "../Icons/Name.png";
-import Point from "../Icons/Point.png";
-import m from "../Icons/7m.png";
-import Buton1 from '../Icons/Buton1.png';
-import Buton2 from '../Icons/Buton2.png';
-import Buton3 from '../Icons/Buton3.png';
-import Buton4 from '../Icons/Buton4.png';
 
-function Tweet(props){
+import Ver from "../Icons/Verified.png";
+
+function Tweet({title,titleDetails,tweetTitleDetails,Cn, 
+    commententaires, Stick, 
+    jaime,Feuil, clas,Text,Buton1,Buton2,Buton3,Buton4}){
 return(<>
 <div className="tweet">
-<a><img src={Cnn} alt=""  className="tweet-avatar "/></a> 
+<a href="#" className="tweet-avatar img" ><img src={Cn} alt=""/></a> 
 
     <div className="tweet-body">
 
     <p className="tweet-title" >
-<span className="tweet-title-author">{props.title}</span>
+<span className="tweet-title-author">{title}</span>
 <span><a href="#"><img src={Ver}/></a></span>
-<span className="tweet-title-details">@CNN</span>
+<span className="tweet-title-details">{titleDetails}</span>
 <span className="tweet-title-details">.</span>
-<span className="tweet-title-details">7m</span>
+<span className="tweet-title-details">{tweetTitleDetails}</span>
    </p>
 
-   <p className="tweet-text">President joe Biden touted a new agreement 
-    reached with the European Union to ease 
-    Trump-era tariffs on aluminum and steel as a 
-    "major breakthrough" that would serve to both 
-    strengthen the Us steel industry and combat the global climat crisis</p>
+   <p className="tweet-text">{Text}</p>
 
-<div className="tweet-actions">
+    <div className={clas}>
+    <img src={Feuil} alt=""    className="tweet-image img"/>
+    </div>
+<div className="tweet-actions" >
 
  <div className="tweet-action">
 <a href='#'><img src={Buton1} alt="" className='actions'/></a>
-<p>57</p>
+<p>{commententaires}</p>
 </div>
 
 <div className="tweet-action">
 <a href='#'><img src={Buton2} alt="" className='actions'/></a>
-<p>144</p>
+<p>{Stick}</p>
 </div>
 
 <div className="tweet-action">
 <a href='#'><img src={Buton3} alt="" className='actions'/></a>
-<p>184</p>
+<p>{jaime}</p>
 </div>
 
 <div className="tweet-action">
