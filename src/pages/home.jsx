@@ -49,9 +49,13 @@ function Home() {
      commententaires={"116.7K"} 
      Stick={"785.7K"} jaime={"3.3M"}/> 
 
-     <Tweet  title={"Twitter" } titleDetails={"@Twitter"} 
+     <Tweet  title={"Twitter" }  Feuil={PhotoFeille} clas={"tweet-image"} titleDetails={"@Twitter"} 
     tweetTitleDetails ={"Oct 4" }
-     Cn={image1}  Text={"hello literally everyone"}/> 
+    Buton1= {Buton1}  
+     Buton2= {Buton2}  Buton3= {Buton3}  
+     Buton4= {Buton4}
+     Cn={image1}  Text={"hello literally everyone"}   commententaires={"118.7K"} 
+     Stick={"785.4K"} jaime={"3.3M"} /> 
      
     </main>
   );
