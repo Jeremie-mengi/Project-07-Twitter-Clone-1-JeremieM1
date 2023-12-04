@@ -4,7 +4,7 @@ return(
     < >
     <div className="header" >
     <p className="page-title">Home</p>
-   <a href="#"><img  className="top-tweets" src={etoile}/></a> 
+   <button className="top-tweets"><img   src={etoile}/></button> 
     </div>
 </>
 )

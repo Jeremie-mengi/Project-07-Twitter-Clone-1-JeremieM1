@@ -2,21 +2,23 @@ import React from 'react';
 import Header from '../components/Header';
 import TweetEditor from '../components/TweetEditor';
 import Tweet from '../components/Tweet';
-import Cnn from "../images/tweet-profile-photo.png";
-import Tweet2 from "../Icons/Tweet2.png";
-import PhotoFeille from "../images/tweet-image.png";
-import image1 from "../images/image1.png";
-import Buton1 from '../Icons/Buton1.png';
-import Buton2 from '../Icons/Buton2.png';
-import Buton3 from '../Icons/Buton3.png';
-import Buton4 from '../Icons/Buton4.png';
+// import Tweet from '../components/Tweet';
+// import Cnn from "../images/tweet-profile-photo.png";
+// import Tweet2 from "../Icons/Tweet2.png";
+// import PhotoFeille from "../images/tweet-image.png";
+// import image1 from "../images/image1.png";
+// import Buton1 from '../Icons/Buton1.png';
+// import Buton2 from '../Icons/Buton2.png';
+// import Buton3 from '../Icons/Buton3.png';
+// import Buton4 from '../Icons/Buton4.png';
 
 function Home() {
   return (
     <main className="timeline">
     <Header/>
     <TweetEditor/>
-    <Tweet  title={"CNN"} titleDetails={"@CNN"} 
+    <Tweet/>
+    {/* <Tweet  title={"CNN"} titleDetails={"@CNN"} 
     tweetTitleDetails ={"7m" } 
     Text={"President joe Biden touted a new agreement reached with the European Union to ease Trump-era tariffs on aluminum and steel as a \"major breakthrough\" that would serve to both strengthen the Us steel industry and combat the global climat crisis "} 
     Cn={Cnn}  Buton1= {Buton1}  
@@ -46,16 +48,16 @@ function Home() {
      Cn={image1}   Buton1= {Buton1}  
      Buton2= {Buton2}  Buton3= {Buton3}  
      Buton4= {Buton4}Text={"hello literally everyone"} 
-     commententaires={"116.7K"} 
-     Stick={"785.7K"} jaime={"3.3M"}/> 
-
+     commententaires={"118.7K"} 
+     Stick={"785.7K"} jaime={"3.3M"}/>  */}
+{/* 
      <Tweet  title={"Twitter" }  Feuil={PhotoFeille} clas={"tweet-image"} titleDetails={"@Twitter"} 
     tweetTitleDetails ={"Oct 4" }
     Buton1= {Buton1}  
      Buton2= {Buton2}  Buton3= {Buton3}  
      Buton4= {Buton4}
      Cn={image1}  Text={"hello literally everyone"}   commententaires={"118.7K"} 
-     Stick={"785.4K"} jaime={"3.3M"} /> 
+     Stick={"785.4K"} jaime={"3.3M"} />  */}
      
     </main>
   );

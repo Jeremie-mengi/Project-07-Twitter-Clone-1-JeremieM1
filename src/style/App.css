@@ -32,6 +32,8 @@ body{
 .top-tweets {
     width: 1.5rem;
     height: auto;
+    background: black;
+    border-style: none;
 }
 
 .page-title {
@@ -192,4 +194,7 @@ body{
     align-items: center;
     justify-content: center;
     gap: 20px;
+    background: black;
+    border-style: none;
+    color:gray;
 }
