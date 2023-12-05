@@ -1,5 +1,5 @@
 
-import Header from "./components/Header.jsx";
+import SideBraleft from "./components/SideBraleft.jsx";
 import Layout from "./components/layout.jsx";
 import Home from "./pages/home.jsx";
 
@@ -9,6 +9,7 @@ import('./style/App.css');
 export default function App() {
   return (
     <Layout>
+     <SideBraleft/>
       <Home/>
     </Layout>
   );

@@ -16,7 +16,7 @@ function TweetEditor() {
 <input type="text" placeholder="Whats is happening"  className="tweet-editor-input"/>
 <div className="tweet-editor-buttons">
 <div className="tweet-editor-actions">
-  <button>  <img type="image"  src={TopTweets1}/></button>
+  <button> <img type="image"  src={TopTweets1}/></button>
   <button> <img type="image"  src={TopTweets2}/> </button>
   <button> <img type="image" src={TopTweets3} /> </button>
   <button> <img type="image" src={TopTweets4} /> </button> 
