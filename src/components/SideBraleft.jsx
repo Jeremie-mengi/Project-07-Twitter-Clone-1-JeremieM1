@@ -13,20 +13,20 @@ import PhotoFeille from "../images/tweet-image.png";
 import image1 from "../images/image1.png";
 import av from "../images/profile-photo.png";
 import Ver from "../Icons/Verified.png";
-
+import {NavLink} from "react-router-dom";
 
 function SideBraleft() {
     return (
  <section>
 <div  className="SideBraleft">
-  <button className="SideBraleft-Child"> <img  src= {TweetIcon}/></button>
-  <button className="SideBraleft-Child"> <img  src= {Icon1}/>Home</button>
+ <button className="SideBraleft-Child"> <img  src= {TweetIcon}/></button>
+ <NavLink to="/App"><button className="SideBraleft-Child"><img  src= {Icon1}/>Home </button></NavLink>
   <button className="SideBraleft-Child"> <img  src= {Icon2}/>Explore</button>
   <button className="SideBraleft-Child"> <img  src= {Icon3}/>Notifications</button>
   <button className="SideBraleft-Child"> <img  src= {Icon4}/>Messages</button>
   <button className="SideBraleft-Child"> <img  src= {Icon5}/>Bookmarks</button>
   <button className="SideBraleft-Child"> <img  src= {Icon6}/>Lists</button>
-  <button className="SideBraleft-Child"> <img  src= {Icon7}/>Profile</button>
+  <NavLink to="/Follow"><button className="SideBraleft-Child"> <img  src= {Icon7}/>Profile</button></NavLink>
   <button className="SideBraleft-Child"> <img  src= {Icon8}/>More</button>
   <button className="button">Tweet</button>
 </div>

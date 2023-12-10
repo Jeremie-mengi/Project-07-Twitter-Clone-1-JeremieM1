@@ -66,6 +66,7 @@ function SidebarRigth() {
       
     <button className="point"><img src={More}alt="" /></button>  
     </div>  
+    <h3><a href="#" className="ShowMore">Show mee</a></h3>
 
     </div>
 
@@ -78,28 +79,29 @@ function SidebarRigth() {
     </div>
 
         <div className="trends-child1-1">
-     <Follow imageAv = {Cnn}  title ="CNN"  titleMail= "@CNN"/>
+        <Follow imageAv = {Tweet2}  title ="The New York Times"  titleMail= "@nytimes" />
+     
 
-    <button className="point"><img src={More}alt="" /></button>  
+    <button className="Follow">Follow</button>  
 
      </div>
 
     <div className="trends-child1-1">
-      <Follow imageAv = {Tweet2}  title ="The New York Times"  titleMail= "@nytimes" />
+    <Follow imageAv = {Cnn}  title ="CNN"  titleMail= "@CNN"/>
 
-    <button className="point"><img src={More} alt="" /></button> 
+    <button className="Follow">Follow</button> 
 
     </div> 
         
     <div className="trends-child1-1">
     <Follow imageAv = {image1}  title ="Twitter"  titleMail= "@Twitter"/>
     
-    <button className="point"><img src={More}alt="" /></button> 
+    <button className="Follow">Follow</button> 
 
     </div>
-       
+       <h3><a href="#" className="ShowMore">Show mee</a></h3>
     </div>
-<p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. A, quos, possimus delectus quia alias nemo voluptates animi exercitationem adipisci aperiam nihil explicabo tempore. Architecto dolorem, voluptas vitae ex culpa id.</p>
+<p className="TredingTurk">Lorem, ipsum dolor sit amet consectetur adipisicing elit. A, quos, possimus delectus quia alias nemo voluptates animi exercitationem adipisci aperiam nihil explicabo tempore. Architecto dolorem, voluptas vitae ex culpa id.</p>
 
 </main>
     )

@@ -1,17 +1,17 @@
 import Icon9 from '../Icons/Icon9.png';
+import Ver from "../Icons/Verified.png";
 function Follow({imageAv,title,titleMail}) {
     return(
 <>
 
 <div className="ContainerAvatar">
-<a href="#">
-<img src={imageAv} className="avatar" />
+<a href="#" className="avatar" >
+<img src={imageAv} />
 </a>
  
  <div className="Cont" >
-
-  <h3>{title}
-  <span><img src={Icon9}/></span>
+  <h3 className='Conth3'>{title}
+ <span><img src={Ver}/></span>
   </h3>
 
   <span id="Bradley">{titleMail}</span>

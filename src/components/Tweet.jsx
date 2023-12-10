@@ -1,7 +1,24 @@
 import Ver from "../Icons/Verified.png";
 import twitter from "../models/objet";
+import TweetLikes from "./TweetLikes";
+
 
 function Tweet(){
+    // const [counter, setCounter] = useState( counterAction );
+    // const [actionType, setActionType] = useState("increment");
+    // const [switchIcon, setSwitchIcon] = useState( iconAction )
+
+    //     const handleClick = () => {
+    //         if (actionType === "increment") {
+    //             setCounter(counter + 1);
+    //             setActionType("decrement");
+    //             setSwitchIcon(swichIconAction)
+    //           } else {
+    //             setCounter(counter - 1);
+    //             setActionType("increment");
+    //             setSwitchIcon( iconAction )
+    //           }
+        
     const tweetEntier = twitter.map((item) => (
    
          <div key= {item.id} className="tweet">
@@ -21,18 +38,9 @@ function Tweet(){
     <div className= "tweet-image"> <img src={item.image} alt=""/>
      </div>
 <div className="tweet-actions" >
-<button className='tweet-action'>
-<img src={item.BoutonTweet.Icon1} />
-{item.BoutonTweet.Nbre1}
-</button>
-<button className='tweet-action'>
-<img src={item.BoutonTweet.Icon2} />
-{item.BoutonTweet.Nbre2}
-</button>
-<button className='tweet-action'>
-<img src={item.BoutonTweet.Icon3} />
-{item.BoutonTweet.Nbre3}
-</button>
+<TweetLikes IcImg = {item.BoutonTweet.Icon1}  Nb ={item.BoutonTweet.Nbre2} />
+<TweetLikes IcImg = {item.BoutonTweet.Icon2}  Nb ={item.BoutonTweet.Nbre2} />
+<TweetLikes IcImg = {item.BoutonTweet.Icon3}  Nb ={item.BoutonTweet.Nbre2} />
 <button className='tweet-action'>
 <img src={item.BoutonTweet.Icon4} />
 </button>
