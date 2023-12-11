@@ -3,7 +3,7 @@ import ReactDOM from 'react-dom/client'
 import { createBrowserRouter, RouterProvider } from 'react-router-dom'
 import App from './App'
 import ProfilUser from './components/ProfilUser'
-import Follow from './components/Follow'
+
 
 const router = createBrowserRouter(
   [{
@@ -12,8 +12,8 @@ const router = createBrowserRouter(
     },
 
   {
-  path:"/Follow",
-  element:<Follow/>
+  path:"/ProfilUser",
+  element:<ProfilUser/>
   },
   // {
   //   path:"/Lodge",

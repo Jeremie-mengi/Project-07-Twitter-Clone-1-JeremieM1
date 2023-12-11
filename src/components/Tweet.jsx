@@ -4,21 +4,6 @@ import TweetLikes from "./TweetLikes";
 
 
 function Tweet(){
-    // const [counter, setCounter] = useState( counterAction );
-    // const [actionType, setActionType] = useState("increment");
-    // const [switchIcon, setSwitchIcon] = useState( iconAction )
-
-    //     const handleClick = () => {
-    //         if (actionType === "increment") {
-    //             setCounter(counter + 1);
-    //             setActionType("decrement");
-    //             setSwitchIcon(swichIconAction)
-    //           } else {
-    //             setCounter(counter - 1);
-    //             setActionType("increment");
-    //             setSwitchIcon( iconAction )
-    //           }
-        
     const tweetEntier = twitter.map((item) => (
    
          <div key= {item.id} className="tweet">

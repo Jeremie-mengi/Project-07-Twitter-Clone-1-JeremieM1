@@ -1,10 +1,8 @@
-import Follow from "./Follow";
-
 
 function ProfilUser() {
     return(
         <>
-        <Follow/>
+        Profil en Attente
         </>
     )
 }

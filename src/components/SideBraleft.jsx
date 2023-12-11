@@ -26,7 +26,7 @@ function SideBraleft() {
   <button className="SideBraleft-Child"> <img  src= {Icon4}/>Messages</button>
   <button className="SideBraleft-Child"> <img  src= {Icon5}/>Bookmarks</button>
   <button className="SideBraleft-Child"> <img  src= {Icon6}/>Lists</button>
-  <NavLink to="/Follow"><button className="SideBraleft-Child"> <img  src= {Icon7}/>Profile</button></NavLink>
+  <NavLink to="/ProfilUser"><button className="SideBraleft-Child"> <img  src= {Icon7}/>Profile</button></NavLink>
   <button className="SideBraleft-Child"> <img  src= {Icon8}/>More</button>
   <button className="button">Tweet</button>
 </div>
