@@ -88,7 +88,7 @@ body{
     display: flex;
     align-items: center;
     justify-content: flex-start;
-    /*padding: 0.8rem 0;*/
+    padding: 0.8rem 0;
     gap: 1rem;
 }
 .tweet-editor-actions button {
@@ -201,9 +201,10 @@ body{
 section{
     display: flex;
     flex-direction: column;
-    gap : 57%;
-    margin-top: 25px;
-    margin-right: 30px;
+    gap : 50px;
+    margin-left: 35px;
+    margin-right: 10px;
+
     }
 .SideBraleft{
 display: flex;
@@ -294,4 +295,5 @@ width: 400px;
     height: 25px;
     width:60px ;
 }
+
 

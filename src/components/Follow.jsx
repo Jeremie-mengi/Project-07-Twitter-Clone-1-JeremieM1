@@ -1,4 +1,3 @@
-import Icon9 from '../Icons/Icon9.png';
 import Ver from "../Icons/Verified.png";
 function Follow({imageAv,title,titleMail}) {
     return(
