@@ -23,14 +23,15 @@ function SideBraleft() {
         {slibarMap}
         <button className="button">Tweet</button>
 
-        <div className="avat">
-<a href="#">
+<Link to={"/profile"} >
+<div className="avat">
+
 <img src={av} className="avatar" />
-</a>
+
  
  <div className="Cont" >
 
-  <h3>Bradley Ortiz
+  <h3 className="proName">Bradley Ortiz
   <span><img src={Icon9}/></span>
   </h3>
 
@@ -39,6 +40,7 @@ function SideBraleft() {
  </div>
 
 </div>
+</Link>
 </section>
 
        )

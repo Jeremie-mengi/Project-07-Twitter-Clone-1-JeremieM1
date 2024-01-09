@@ -24,13 +24,20 @@ function ProfilUser() {
             <a href="#">
             <img src={userProfil.userImage} alt="" className="profilImage"/>
             </a>
-            <h1>{userProfil.name}</h1>
-            <p>{userProfil.userName}posts</p>
+            <h1 className="profilName">{userProfil.name}</h1>
+            <p className="profDes">{userProfil.userName}</p>
             <p>{userProfil.description}</p>
+            <div className="blocAbon">
+            <a href="#" className="AbonLink">
+            {userProfil.abonnement} 
+            <span className="AbonText">abonnements</span>
+            </a>
+            <a href="#" className="AbonLink">
+            {userProfil.abonne}
+            <span className="AbonText" > abonnés</span>
+            </a>
+           
 
-            <div className="">
-            <span>{userProfil.abonnement} abonnements</span>
-            <span>{userProfil.abonne} abonnés</span>
             </div>
             </div>
 

@@ -5,7 +5,7 @@ import image1 from "../images/image1.png";
 import Setting from "../Icons/Settings.png";
 import Follow from "./Follow";
 import Trends from "../models/Trends";
-function SidebarRigth() {
+function TrendsComponent() {
     const trends = Trends.map((key)=>(
   <div className="trends-child1-1">
     <p>
@@ -75,4 +75,4 @@ function SidebarRigth() {
     )
     
 }
-export default SidebarRigth;
+export default TrendsComponent;

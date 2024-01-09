@@ -239,7 +239,8 @@ display: flex;
 flex-direction: column;        
 }
 #Bradley{
-color: gray;   
+color: gray; 
+margin-top:-20px;  
 }
 .inputSeach{
 border-radius:8px; 
@@ -311,6 +312,7 @@ width: 400px;
     font-weight: 700;
 }
 .posts{
+    margin-top:-15px;
     font-size: 13px;
     font-weight: 400;
 }
@@ -348,9 +350,41 @@ gap: 10px;
 border: 1px solid rgb(83, 100, 113);
 color: rgb(239, 243, 244);
 padding: 8px 15px;
+margin-top:-45px ;
 border-radius: 50px;
 text-decoration: none;
 font-weight: 700;
 font-size: 16px;
 background: transparent;
+}
+.blocAbon{
+    display: flex;
+    gap: 10px;
+}
+.AbonLink{
+text-decoration: none;
+display: flex;
+color: #fff;
+gap: 5px;
+padding: 0;
+border-bottom: 1px solid transparent;
+transition: all 0.2s;
+line-height: 1em;
+}
+.AbonText{
+ color:#6E767D;  
+}
+.profilName{
+color: rgb(231, 233, 234);
+font-size: 20px;
+margin-top: 10px;
+font-weight: 800;
+}
+.proName{
+    color: white;
+}
+.profDes{
+    margin-top: -14px;
+    color:#6E767D;
+    font-size:17px;
 }
