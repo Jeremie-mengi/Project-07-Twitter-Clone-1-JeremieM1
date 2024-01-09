@@ -9,8 +9,8 @@ function ProfilUser() {
         <p>{userProfil.name}</p>
         <p className="posts">{userProfil.postes}posts</p>
         </div>
-       </div>
-       <div className="parentImgCouv">
+        </div>
+        <div className="parentImgCouv">
         <div className="ImgCouv">
         {/* <img src={userProfil.imgCouverture}/> */}
         </div>
@@ -20,8 +20,8 @@ function ProfilUser() {
             <div className="ParentAvat-Child">
             <div className="ParentAvat-Child1">
             <img src={userProfil.userImage} alt="" className="profilImage"/>
-        
-
+            <p>{userProfil.name}</p>
+            <p>{userProfil.abonnement}</p>
             </div>
             </div>
 
