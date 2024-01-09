@@ -6,7 +6,7 @@ const userProfil = {
     userImage : av,
     imgCouverture: couvImage,
     postes : 77,
-    description: "Developpeur Full-stack",
+    description: "Customers Odoo",
     abonnement: 10,
     abonne: 50
   }

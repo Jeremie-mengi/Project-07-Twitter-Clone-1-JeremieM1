@@ -310,8 +310,8 @@ width: 400px;
     font-size: 18px;
     font-weight: 700;
 }
-.profilUser-child.posts{
-    font-size: 9px;
+.posts{
+    font-size: 13px;
     font-weight: 400;
 }
 .ImgCouv{
@@ -329,7 +329,7 @@ gap: 15px;
 z-index: 10;
 position: relative;
 }
-.ParentAvat.ParentAvat-Child{
+.ParentAvat-Child{
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -339,5 +339,18 @@ width: 135px;
 height: auto;
 border-radius: 100%;   
 }
-
-
+.prEd {
+display: flex;
+flex-direction: column;
+gap: 10px;
+}
+.profEdit1{
+border: 1px solid rgb(83, 100, 113);
+color: rgb(239, 243, 244);
+padding: 8px 15px;
+border-radius: 50px;
+text-decoration: none;
+font-weight: 700;
+font-size: 16px;
+background: transparent;
+}

@@ -1,5 +1,6 @@
 import React from "react";
 import userProfil from "../models/User";
+import { Link } from "react-router-dom";
 
 function ProfilUser() {
     return(
@@ -18,12 +19,28 @@ function ProfilUser() {
         <div className="ParentAvat" >
 
             <div className="ParentAvat-Child">
+
             <div className="ParentAvat-Child1">
+            <a href="#">
             <img src={userProfil.userImage} alt="" className="profilImage"/>
-            <p>{userProfil.name}</p>
-            <p>{userProfil.abonnement}</p>
+            </a>
+            <h1>{userProfil.name}</h1>
+            <p>{userProfil.userName}posts</p>
+            <p>{userProfil.description}</p>
+
+            <div className="">
+            <span>{userProfil.abonnement} abonnements</span>
+            <span>{userProfil.abonne} abonnés</span>
             </div>
             </div>
+
+            <div className="prEd">
+            <a href="#" className="profEdit1">
+                Profile editor
+            </a> 
+            </div>
+            </div>
+
 
 
         </div>
