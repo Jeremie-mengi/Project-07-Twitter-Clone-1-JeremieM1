@@ -1,14 +1,23 @@
 import Cnn from "../images/tweet-profile-photo.png";
+import React from "react";
 import Tweet2 from "../Icons/Tweet2.png";
 import image1 from "../images/image1.png";
-import More from "../Icons/More-2.png";
 import Setting from "../Icons/Settings.png";
 import Follow from "./Follow";
-
-
-
-
+import Trends from "../models/Trends";
 function SidebarRigth() {
+    const trends = Trends.map((key)=>(
+  <div className="trends-child1-1">
+    <p>
+    <span className="TredingTurk">{key.name}</span>
+    <h2 >{key.Squid}</h2> 
+    <span className="TredingTurk" >{key.Montant}</span> 
+    </p> 
+
+    <button className="point"><img src={key.Img}alt="" /></button>  
+
+     </div>
+    ))
     return (
  <main className="trends">
 
@@ -24,48 +33,7 @@ function SidebarRigth() {
         <button className="point"> <img src={Setting} alt="" /></button>
         </div>
         
-        <div className="trends-child1-1">
-    <p>
-    <span className="TredingTurk">Trending in Turkey</span>
-    <h2 >#SQUID</h2> 
-    <span className="TredingTurk" >2,066 Tweets</span> 
-    </p> 
-
-    <button className="point"><img src={More}alt="" /></button>  
-
-     </div>
-
-    <div className="trends-child1-1">
-    <p>
-    <span className="TredingTurk">Trending in Turkey</span>
-    <h2 >#SQUID</h2> 
-    <span className="TredingTurk">2,066 Tweets</span> 
-    </p>  
-
-    <button className="point"><img src={More} alt="" /></button> 
-
-    </div> 
-        
-    <div className="trends-child1-1">
-    <p>
-    <span className="TredingTurk">Trending in Turkey</span>
-    <h2 >#SQUID</h2> 
-    <span className="TredingTurk">2,066 Tweets</span> 
-    </p>  
-
-    <button className="point"><img src={More}alt="" /></button> 
-
-    </div>
-       
-    <div className="trends-child1-1">
-    <p>
-    <span className="TredingTurk">Trending in Turkey</span>
-    <h2 >#SQUID</h2> 
-    <span className="TredingTurk">2,066 Tweets</span> 
-    </p>
-      
-    <button className="point"><img src={More}alt="" /></button>  
-    </div>  
+       {trends}
     <h3><a href="#" className="ShowMore">Show mee</a></h3>
 
     </div>

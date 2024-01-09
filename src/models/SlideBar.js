@@ -7,7 +7,6 @@ import Icon5 from '../Icons/Icon5.png';
 import Icon6 from '../Icons/Icon6.png';
 import Icon7 from '../Icons/Icon7.png';
 import Icon8 from '../Icons/Icon8.png';
-import Icon9 from '../Icons/Icon9.png';
 import TweetIcon from '../Icons/Twitter_Icon.png';
 
 
