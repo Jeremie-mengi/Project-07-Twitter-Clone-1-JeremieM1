@@ -224,6 +224,8 @@ font-size: 1.2rem;
 background-color: black;
 border-style: none;
 font-weight: bold;
+margin-left: 50px;
+margin-right: 50px;
 }
 .ContainerAvatar{
 display: flex;
