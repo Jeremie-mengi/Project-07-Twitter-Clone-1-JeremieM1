@@ -4,16 +4,35 @@ import TopTweets2 from "../Icons/Top-Tweets2.png";
 import TopTweets3 from "../Icons/Top-Tweets3.png";
 import TopTweets4 from "../Icons/Top-Tweets4.png";
 import TopTweets5 from "../Icons/Top-Tweets5.png";
+import { CloneContext} from "../componentContext/cloneContext";
+import { useContext } from "react";
 
 function TweetEditor() {
+
+ const {inputTweet,setinputTweet,addMyTweet} = useContext(CloneContext); 
+  const textInput = (e) =>{
+    setinputTweet(e.target.value)
+  }
+  const clickButton = () => {
+    addMyTweet();
+
+  } 
+
     return(
         <>
         <div className="tweet-editor "> 
 <a href="#">
 <img src={av} className="avatar" />
 </a>
-<div className="tweet-editor-form">
-<input type="text" placeholder="Whats is happening"  className="tweet-editor-input"/>
+
+<form className="tweet-editor-form">
+
+<input type="text" 
+placeholder="Whats is happening"  
+className="tweet-editor-input"
+onChange={textInput}
+value={inputTweet}
+/>
 <div className="tweet-editor-buttons">
 <div className="tweet-editor-actions">
   <button> <img type="image"  src={TopTweets1}/></button>
@@ -23,9 +42,9 @@ function TweetEditor() {
   <button> <img type="image" src={TopTweets5} /> </button>
 </div>
 
-<button className="button">Tweet</button>
+<button className="button" onClick={(e) => {e.preventDefault(); clickButton()}} >Tweet</button>
 </div>
-</div>
+</form>
 </div>
         
         </>

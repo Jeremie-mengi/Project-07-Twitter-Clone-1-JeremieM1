@@ -312,9 +312,10 @@ width: 400px;
 .profilUser-child{
     font-size: 18px;
     font-weight: 700;
+ 
 }
 .posts{
-    margin-top:-15px;
+    margin-top:-6px;
     font-size: 13px;
     font-weight: 400;
 }

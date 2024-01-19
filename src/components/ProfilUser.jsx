@@ -11,6 +11,7 @@ function ProfilUser() {
         <p className="posts">{userProfil.postes}posts</p>
         </div>
         </div>
+        
         <div className="parentImgCouv">
         <div className="ImgCouv">
         {/* <img src={userProfil.imgCouverture}/> */}

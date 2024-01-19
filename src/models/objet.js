@@ -7,7 +7,7 @@ import Buton4 from '../Icons/Buton4.png';
 import PhotoFeille from "../images/tweet-image.png";
 import image1 from "../images/image1.png";
 
-const twitter = [ 
+const twe = [ 
     {
     id : 1,
    title :"CNN",
@@ -116,4 +116,4 @@ const twitter = [
 },
 }
    ]
-   export default twitter;
+   export default twe;
