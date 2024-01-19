@@ -198,6 +198,7 @@ body{
     border-style: none;
     color:gray;
 }
+
 section{
     display: flex;
     flex-direction: column;
@@ -390,4 +391,7 @@ font-weight: 800;
     margin-top: -14px;
     color:#6E767D;
     font-size:17px;
+}
+.ImgTweet:active{
+    background-color: red;
 }

@@ -4,17 +4,54 @@ import TopTweets2 from "../Icons/Top-Tweets2.png";
 import TopTweets3 from "../Icons/Top-Tweets3.png";
 import TopTweets4 from "../Icons/Top-Tweets4.png";
 import TopTweets5 from "../Icons/Top-Tweets5.png";
-import { CloneContext} from "../componentContext/cloneContext";
+import Buton1 from '../Icons/Buton1.png';
+import Buton2 from '../Icons/Buton2.png';
+import Buton3 from '../Icons/Buton3.png';
+import Buton4 from '../Icons/Buton4.png';
 import { useContext, useState } from "react";
+import { CloneContext } from "../componentContext/cloneContext";
 
 function TweetEditor() {
-const [inputText, setinputText] = useState('')
- const {addMyTweet,tweetPost, setTweetPost} = useContext(CloneContext); 
+const {tweetPost,setTweetPost}  = useContext(CloneContext);
+const [inputText, setInputText] = useState('');
+
+const addMyTweet = (inpText) =>{
+  if (inpText !== ''){
+    const tweetTampon =
+      {
+   id :tweetPost.length+1,
+   title :"CNN",
+   titleDetails:"@CNN",
+   timeTtweetDetails :"7m",
+   avatar :av,
+   text:inpText,
+   BoutonTweet : { 
+       Icon1 : Buton1,
+       Nbre1 : 57,
+       
+       Icon2 : Buton2,
+       Nbre2 : 144,
+   
+       Icon3 : Buton3,
+       Nbre3 : 184,
+   
+       Icon4 : Buton4
+}
+      }
+      
+    
+    setTweetPost(e => [tweetTampon, ...tweetPost])
+
+  }
+}
+
+
+
   const textInput = (e) =>{
-    setinputText(e.target.value)
+    setInputText(e.target.value)
   }
   const clickButton = () => {
-    addMyTweet(inputText, tweetPost, setTweetPost);
+    addMyTweet(inputText);
 
   } 
 

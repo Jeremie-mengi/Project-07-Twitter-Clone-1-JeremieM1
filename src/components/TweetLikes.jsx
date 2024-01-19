@@ -22,8 +22,8 @@ function TweetLikes({IcImg,Nb}) {
           <span>{Counter}</span>
         </button> */}
 
-<button className='tweet-action' onClick={SituationCount}>
-<img src={IcImg}/>
+<button className='tweet-action ImgTweet' onClick={SituationCount}>
+<img src={IcImg} className='ImgTweet' />
 {Counter}
 </button>
 
