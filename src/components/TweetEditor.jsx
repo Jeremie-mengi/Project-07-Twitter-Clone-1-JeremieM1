@@ -5,16 +5,16 @@ import TopTweets3 from "../Icons/Top-Tweets3.png";
 import TopTweets4 from "../Icons/Top-Tweets4.png";
 import TopTweets5 from "../Icons/Top-Tweets5.png";
 import { CloneContext} from "../componentContext/cloneContext";
-import { useContext } from "react";
+import { useContext, useState } from "react";
 
 function TweetEditor() {
-
- const {inputTweet,setinputTweet,addMyTweet} = useContext(CloneContext); 
+const [inputText, setinputText] = useState('')
+ const {addMyTweet,tweetPost, setTweetPost} = useContext(CloneContext); 
   const textInput = (e) =>{
-    setinputTweet(e.target.value)
+    setinputText(e.target.value)
   }
   const clickButton = () => {
-    addMyTweet();
+    addMyTweet(inputText, tweetPost, setTweetPost);
 
   } 
 
@@ -31,7 +31,7 @@ function TweetEditor() {
 placeholder="Whats is happening"  
 className="tweet-editor-input"
 onChange={textInput}
-value={inputTweet}
+value={inputText}
 />
 <div className="tweet-editor-buttons">
 <div className="tweet-editor-actions">
