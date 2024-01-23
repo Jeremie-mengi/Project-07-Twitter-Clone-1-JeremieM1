@@ -10,6 +10,7 @@ import Buton3 from '../Icons/Buton3.png';
 import Buton4 from '../Icons/Buton4.png';
 import { useContext, useState } from "react";
 import { CloneContext } from "../componentContext/cloneContext";
+import { AiOutlineHeart } from "react-icons/ai";
 
 function TweetEditor() {
 const {tweetPost,setTweetPost}  = useContext(CloneContext);
@@ -32,7 +33,7 @@ const addMyTweet = (inpText) =>{
        Icon2 : Buton2,
        Nbre2 : 144,
    
-       Icon3 : Buton3,
+       Icon3 : AiOutlineHeart,
        Nbre3 : 184,
    
        Icon4 : Buton4

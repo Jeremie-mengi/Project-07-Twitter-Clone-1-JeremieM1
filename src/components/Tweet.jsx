@@ -26,7 +26,7 @@ function Tweet(){
 <div className="flex justify-center items-center gap-[5rem] color-[grey] text-base" >
 <TweetLikes IcImg = {item.BoutonTweet.Icon1}  Nb ={item.BoutonTweet.Nbre2} />
 <TweetLikes IcImg = {item.BoutonTweet.Icon2}  Nb ={item.BoutonTweet.Nbre2} />
-<TweetLikes IcImg = {item.BoutonTweet.Icon3}  Nb ={item.BoutonTweet.Nbre2} />
+<TweetLikes Icon3 = {item.BoutonTweet.Icon3}  Nb ={item.BoutonTweet.Nbre2} />
 <button  className='flex justify-center items-center gap-[20px] background-[black] color-gray'>
 <img src={item.BoutonTweet.Icon4}  />
 </button>

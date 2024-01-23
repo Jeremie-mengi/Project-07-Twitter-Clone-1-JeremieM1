@@ -2,7 +2,7 @@
  import '../style/App.css';
 import { useState } from 'react';
 
-function TweetLikes({IcImg,Nb}) {
+function TweetLikes({IcImg,Icon3}) {
   const [Counter, setCounter] = useState(0);
   const [Jaime, setjaime] = useState(false);
   const SituationCount = () => {
@@ -17,13 +17,10 @@ function TweetLikes({IcImg,Nb}) {
 
   return (
     <>
-      {/* <div className="tweet-actions">
-        <button className="tweet-action" onClick={SituationCount}>
-          <span>{Counter}</span>
-        </button> */}
-
-<button className='tweet-action ImgTweet' onClick={SituationCount}>
-<img src={IcImg} className='ImgTweet' />
+    
+<button className='tweet-action' onClick={SituationCount}>
+{IcImg && <img src={IcImg} />}
+{Icon3 && <Icon3 className="ImgTweet"/>}
 {Counter}
 </button>
 

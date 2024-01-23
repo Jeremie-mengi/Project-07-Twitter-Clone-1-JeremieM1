@@ -2,10 +2,10 @@ import Tweet2 from "../Icons/Tweet2.png";
 import Cnn from "../images/tweet-profile-photo.png";
 import Buton1 from '../Icons/Buton1.png';
 import Buton2 from '../Icons/Buton2.png';
-import Buton3 from '../Icons/Buton3.png';
 import Buton4 from '../Icons/Buton4.png';
 import PhotoFeille from "../images/tweet-image.png";
 import image1 from "../images/image1.png";
+import { AiOutlineHeart } from "react-icons/ai";
 
 const twe = [ 
     {
@@ -22,7 +22,7 @@ const twe = [
        Icon2 : Buton2,
        Nbre2 : 144,
    
-       Icon3 : Buton3,
+       Icon3 : AiOutlineHeart ,
        Nbre3 : 184,
    
        Icon4 : Buton4
@@ -45,7 +45,7 @@ const twe = [
        Icon2 : Buton2,
        Nbre2 : 48,
    
-       Icon3 : Buton3,
+       Icon3 : AiOutlineHeart ,
        Nbre3 : 482,
    
        Icon4 : Buton4
@@ -66,7 +66,7 @@ const twe = [
        Icon2 : Buton2,
        Nbre2 : "36.6K",
    
-       Icon3 : Buton3,
+       Icon3 : AiOutlineHeart ,
        Nbre3 : "267.1K",
    
        Icon4 : Buton4
@@ -87,7 +87,7 @@ const twe = [
        Icon2 : Buton2,
        Nbre2 : "785.4K",
    
-       Icon3 : Buton3,
+       Icon3 : AiOutlineHeart ,
        Nbre3 : "3.3M",
    
        Icon4 : Buton4
@@ -109,7 +109,7 @@ const twe = [
        Icon2 : Buton2,
        Nbre2 : "785.4K",
 
-       Icon3 : Buton3,
+       Icon3 : AiOutlineHeart ,
        Nbre3 : "3.3 M",
    
        Icon4 : Buton4
