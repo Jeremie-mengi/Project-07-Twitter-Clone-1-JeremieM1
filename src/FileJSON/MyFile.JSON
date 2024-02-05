@@ -1,0 +1,104 @@
+ [ {
+    "id" : 1,
+    "title" :"CNN",
+    "titleDetails":"@CNN",
+    "timeTtweetDetails" :"7m",
+    "avatar" :"https://drive.google.com/file/d/14vuG5kAE3WPXZBdDrKIv7GBhphVkkYLI/view?usp=sharing",
+    "text":"President joe Biden touted a new agreement reached with the European Union to ease Trump-era tariffs on aluminum and steel as a \"major breakthrough\" that would serve to both strengthen the Us steel industry and combat the global climat crisis ",
+    "BoutonTweet" : { 
+        "Icon1" : "https://drive.google.com/file/d/1ObNbx8cTk4ipifC3O76-5eSThLIQtEgv/view?usp=sharing",
+        "Nbre1" : 57,
+        
+        "Icon2" : "https://drive.google.com/file/d/1BMEcAKnUrdMiy8C7Q8kUjPE7UnH-unnW/view?usp=sharing",
+        "Nbre2" : 144,
+    
+        "Icon3" : AiOutlineHeart,
+        "Nbre3" : 184,
+    
+        "Icon4" : "https://drive.google.com/file/d/1j-bO5O_mxN4IAB2SLCNLElr8wQuvbKa_/view?usp=sharing"
+
+ }},
+ 
+ {
+    "id" : 2,
+    "title" :"The New York Times",
+    "titleDetails":"@nytimes",
+    "timeTtweetDetails" :"2h",
+    "avatar" : "https://drive.google.com/file/d/15C0zq8Xu_j8ialJldLKi2XkfKDvNPrd4/view?usp=sharing",
+    "text":"Gardening boomed during the pandemic.Six Black writers share show has helped them re-establish, and reimagine, a connection to cultivation and the land",
+    "image": "https://drive.google.com/file/d/1-LbpPqj3dREimcSPR5LqOQoBmJjPPQt9/view?usp=sharing",
+    "BoutonTweet" : { 
+        "Icon1" :  "https://drive.google.com/file/d/1ObNbx8cTk4ipifC3O76-5eSThLIQtEgv/view?usp=sharing",
+        "Nbre1" : 19,
+        
+        "Icon2" : "https://drive.google.com/file/d/1BMEcAKnUrdMiy8C7Q8kUjPE7UnH-unnW/view?usp=sharing",
+        "Nbre2" : 48,
+    
+        "Icon3" : AiOutlineHeart ,
+        "Nbre3" : 482,
+    
+        "Icon4" : "https://drive.google.com/file/d/1j-bO5O_mxN4IAB2SLCNLElr8wQuvbKa_/view?usp=sharing"
+ }},
+    
+    {
+    "id" : 3,
+    "title" :"Twitter",
+    "titleDetails":"@Twitter",
+    "timeTtweetDetails" :"Oct 29",
+    "avatar" : "https://drive.google.com/file/d/12rBMoXDtYMqeirjuw3CXOxaMAgbFQVWP/view?usp=sharing",
+    "text":"BIG NEWS lol Jk still Twitter",
+    "BoutonTweet" :{
+        "Icon1" : "https://drive.google.com/file/d/1ObNbx8cTk4ipifC3O76-5eSThLIQtEgv/view?usp=sharing",
+        "Nbre1" : "6.8K",
+        
+        "Icon2" : "https://drive.google.com/file/d/1BMEcAKnUrdMiy8C7Q8kUjPE7UnH-unnW/view?usp=sharing",
+        "Nbre2" : "36.6K",
+    
+        "Icon3" : AiOutlineHeart,
+         "Nbre3" : "267.1K",
+    
+        "Icon4" : "https://drive.google.com/file/d/1j-bO5O_mxN4IAB2SLCNLElr8wQuvbKa_/view?usp=sharing"
+    }
+ },
+    {
+    "id" : 4,
+    "title" :"Twitter",
+    "titleDetails":"@Twitter",
+    "timeTtweetDetails" :"Oct 4",
+    "avatar" : "https://drive.google.com/file/d/12rBMoXDtYMqeirjuw3CXOxaMAgbFQVWP/view?usp=sharing",
+    "text":"hello literally everyone",
+    "BoutonTweet" : 
+        {
+    "Icon1" :"https://drive.google.com/file/d/1ObNbx8cTk4ipifC3O76-5eSThLIQtEgv/view?usp=sharing",
+    "Nbre1" : "118.7K",
+        
+        "Icon2" : "https://drive.google.com/file/d/1BMEcAKnUrdMiy8C7Q8kUjPE7UnH-unnW/view?usp=sharing",
+        "Nbre2" : "785.4K",
+    
+        "Icon3" : AiOutlineHeart,
+        "Nbre3" : "3.3M",
+    
+        "Icon4" : "https://drive.google.com/file/d/1j-bO5O_mxN4IAB2SLCNLElr8wQuvbKa_/view?usp=sharing"
+    }
+ },
+    {
+    "id" : 5,
+    "title" :"Twitter",
+    "titleDetails":"@Twitter",
+    "timeTtweetDetails" :"Oct 4",
+    "avatar" : "https://drive.google.com/file/d/12rBMoXDtYMqeirjuw3CXOxaMAgbFQVWP/view?usp=sharing",
+    "text":"hello literally everyone",
+    "image": "https://drive.google.com/file/d/1-LbpPqj3dREimcSPR5LqOQoBmJjPPQt9/view?usp=sharing",
+    "BoutonTweet" : 
+        {
+        "Icon1" : "https://drive.google.com/file/d/1ObNbx8cTk4ipifC3O76-5eSThLIQtEgv/view?usp=sharing",
+        "Nbre1" : "118.7K",
+        
+        "Icon2" : "https://drive.google.com/file/d/1BMEcAKnUrdMiy8C7Q8kUjPE7UnH-unnW/view?usp=sharing",
+        "Nbre2" : "785.4K",
+ 
+        "Icon3" : AiOutlineHeart ,
+        "Nbre3" : "3.3 M",
+    
+        "Icon4" : "https://drive.google.com/file/d/1j-bO5O_mxN4IAB2SLCNLElr8wQuvbKa_/view?usp=sharing"
+ }}]

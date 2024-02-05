@@ -1,6 +1,5 @@
 import { useContext } from "react";
 import Ver from "../Icons/Verified.png";
-import twitter from "../models/objet";
 import TweetLikes from "./TweetLikes";
 import { CloneContext } from "../componentContext/cloneContext";
 
@@ -23,9 +22,19 @@ function Tweet(){
 
     <div className= "width-full p-[.3rem 0 0 0]"> <img className="rounded-[50px] h-auto  max-width-[100%]    border-solid  " src={item.image} alt=""/>
      </div>
-<div className="flex justify-center items-center gap-[5rem] color-[grey] text-base" >
-<TweetLikes IcImg = {item.BoutonTweet.Icon1}  Nb ={item.BoutonTweet.Nbre2} />
-<TweetLikes IcImg = {item.BoutonTweet.Icon2}  Nb ={item.BoutonTweet.Nbre2} />
+<div className="flex justify-center items-center gap-[5rem] color-[gray] text-base" >
+
+<button  className='flex justify-center items-center gap-[20px] background-[black] color-gray'>
+<img src={item.BoutonTweet.Icon1}  />
+<span className=''>{item.BoutonTweet.Nbre1}</span>
+</button>
+
+<button  className='flex justify-center items-center gap-[20px] background-[black] color-gray'>
+<img src={item.BoutonTweet.Icon2}  />
+<span className="">{item.BoutonTweet.Nbre2}</span>
+</button>
+{/* <TweetLikes IcImg = {item.BoutonTweet.Icon1}  Nb ={item.BoutonTweet.Nbre2} />
+<TweetLikes IcImg = {item.BoutonTweet.Icon2}  Nb ={item.BoutonTweet.Nbre2} /> */}
 <TweetLikes Icon3 = {item.BoutonTweet.Icon3}  Nb ={item.BoutonTweet.Nbre2} />
 <button  className='flex justify-center items-center gap-[20px] background-[black] color-gray'>
 <img src={item.BoutonTweet.Icon4}  />
@@ -33,7 +42,8 @@ function Tweet(){
 
 </div>
 </div>
-</div> ));
+</div> 
+));
 
     return(
         <div>{tweetEntier}</div>

@@ -91,7 +91,7 @@ const twe = [
        Nbre3 : "3.3M",
    
        Icon4 : Buton4
-   },
+   }
 },
    {
    id : 5,
@@ -113,7 +113,6 @@ const twe = [
        Nbre3 : "3.3 M",
    
        Icon4 : Buton4
-},
-}
+}}
    ]
    export default twe;

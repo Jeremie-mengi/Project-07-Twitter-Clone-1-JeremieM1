@@ -15,6 +15,7 @@ import { AiOutlineHeart } from "react-icons/ai";
 function TweetEditor() {
 const {tweetPost,setTweetPost}  = useContext(CloneContext);
 const [inputText, setInputText] = useState('');
+// const [FileImage, setFileImage] = useState('Imagefile');
 
 const addMyTweet = (inpText) =>{
   if (inpText !== ''){
@@ -55,6 +56,18 @@ const addMyTweet = (inpText) =>{
     addMyTweet(inputText);
 
   } 
+const handle = (e)=> {
+  const file = e.target.files[0]
+  if (file && e.target.id==='Imagefile'){
+    const reader = new Filereader()
+    reader.onloadend = ()=>{
+      setFileImage(reader.result)
+    };
+    reader.readAsDataURL(file);
+  }
+  e.target.value = null;
+}
+
 
     return(
         <>
@@ -73,7 +86,9 @@ value={inputText}
 />
 <div className="tweet-editor-buttons">
 <div className="tweet-editor-actions">
-  <button> <img type="image"  src={TopTweets1}/></button>
+<label htmlFor="Imagefile"><img type="image" src={TopTweets1} />
+   <input type="file"className="hidden" id="Imagefile" onChange={handle} />
+</label>  
   <button> <img type="image"  src={TopTweets2}/> </button>
   <button> <img type="image" src={TopTweets3} /> </button>
   <button> <img type="image" src={TopTweets4} /> </button> 
