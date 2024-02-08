@@ -21,30 +21,35 @@ const router = createBrowserRouter(
           path:"/Profile",
           element: <ProfilUser/>, 
         },
-        // {
-        //   path:"/explore",
-        //   element:< />
-        // },
-        // {
-        //   path:"/notification",
-        //   element:< />
-        // },
-        // {
-        //   path:"/message",
-        //   element:< />
-        // },
-        // {
-        //   path:"/bookmark",
-        //   element:</>
-        // },
-        // {
-        //   path:"/liste",
-        //   element:</>
-        // },
-        // {
-        //   path:"/more",
-        //   element:</>
-        // },
+        {
+          path:"/Explore",
+          element:< ProfilUser/>
+        },
+        {
+          path:"/Notifications",
+          element:< ProfilUser/>
+        },
+        {
+          path:"/Messages",
+          element:< ProfilUser/>
+        },
+        {
+          path:"/Bookmarks",
+          element:<ProfilUser/>
+        },
+        {
+          path:"/Bookmarks",
+          element:<ProfilUser/>
+        },
+        {
+          path:"/More",
+          element:<ProfilUser/>
+        },
+        {
+          path:"/:title",
+          element:<ProfilUser/>
+        }
+
   
     ],
        

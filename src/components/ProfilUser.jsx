@@ -1,13 +1,15 @@
 import React from "react";
 import userProfil from "../models/User";
-import { Link } from "react-router-dom";
+import { useParams } from "react-router-dom";
 
 function ProfilUser() {
+const {title} = useParams();
+// const profilDetails = ()
     return(
    <main className="timeline">
        <div className="profilUser">
         <div className="profilUser-child">
-        <p>{userProfil.name}</p>
+        <p>{title}</p>
         <p className="posts">{userProfil.postes}posts</p>
         </div>
         </div>

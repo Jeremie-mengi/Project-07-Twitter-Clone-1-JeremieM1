@@ -11,14 +11,21 @@ import Buton4 from '../Icons/Buton4.png';
 import { useContext, useState } from "react";
 import { CloneContext } from "../componentContext/cloneContext";
 import { AiOutlineHeart } from "react-icons/ai";
+import { useForm } from "react-hook-form";
 
 function TweetEditor() {
+  const {
+    register,
+    handleSubmit,
+    formState: { errors },
+  } = useForm();
+
 const {tweetPost,setTweetPost}  = useContext(CloneContext);
 const [inputText, setInputText] = useState('');
-// const [FileImage, setFileImage] = useState('Imagefile');
+const [FileImage, setFileImage] = useState(null);
 
-const addMyTweet = (inpText) =>{
-  if (inpText !== ''){
+const addMyTweet = () =>{
+  if (inputText !== ''){
     const tweetTampon =
       {
    id :tweetPost.length+1,
@@ -26,7 +33,8 @@ const addMyTweet = (inpText) =>{
    titleDetails:"@CNN",
    timeTtweetDetails :"7m",
    avatar :av,
-   text:inpText,
+   text:inputText,
+   image:FileImage,
    BoutonTweet : { 
        Icon1 : Buton1,
        Nbre1 : 57,
@@ -40,35 +48,23 @@ const addMyTweet = (inpText) =>{
        Icon4 : Buton4
 }
       }
-      
-    
-    setTweetPost(e => [tweetTampon, ...tweetPost])
-
+setTweetPost(e => [tweetTampon, ...tweetPost])
+setInputText("");
+setFileImage(null);
   }
 }
+   
 
-
-
-  const textInput = (e) =>{
-    setInputText(e.target.value)
-  }
-  const clickButton = () => {
-    addMyTweet(inputText);
-
-  } 
 const handle = (e)=> {
   const file = e.target.files[0]
   if (file && e.target.id==='Imagefile'){
-    const reader = new Filereader()
+    const reader = new FileReader()
     reader.onloadend = ()=>{
       setFileImage(reader.result)
     };
     reader.readAsDataURL(file);
   }
-  e.target.value = null;
 }
-
-
     return(
         <>
         <div className="tweet-editor "> 
@@ -76,14 +72,16 @@ const handle = (e)=> {
 <img src={av} className="avatar" />
 </a>
 
-<form className="tweet-editor-form">
+<form onSubmit={handleSubmit((data) => addMyTweet(data))} className="tweet-editor-form">
 
-<input type="text" 
+<input  {...register("name", {required: true, minLength: 5})} 
+type="text"  
 placeholder="Whats is happening"  
 className="tweet-editor-input"
-onChange={textInput}
+onChange={(e)=>setInputText(e.target.value)}
 value={inputText}
 />
+{errors.name && <p className="text-red-700">Ce champ est requis, ou doit avoir au minimum 5 caractères</p>}
 <div className="tweet-editor-buttons">
 <div className="tweet-editor-actions">
 <label htmlFor="Imagefile"><img type="image" src={TopTweets1} />
@@ -95,9 +93,10 @@ value={inputText}
   <button> <img type="image" src={TopTweets5} /> </button>
 </div>
 
-<button className="button" onClick={(e) => {e.preventDefault(); clickButton()}} >Tweet</button>
+<button className="button">Tweet</button>
 </div>
 </form>
+{FileImage&& <img className="w-[50px]" src={FileImage}/>}
 </div>
         
         </>

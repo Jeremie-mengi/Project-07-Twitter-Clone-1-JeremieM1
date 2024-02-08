@@ -2,13 +2,13 @@ import { useContext } from "react";
 import Ver from "../Icons/Verified.png";
 import TweetLikes from "./TweetLikes";
 import { CloneContext } from "../componentContext/cloneContext";
-
+import { Link } from "react-router-dom";
 function Tweet(){
     const cont = useContext(CloneContext)
     const tweetEntier = cont.tweetPost.map((item) => (
    
          <div key= {item.id} className="flex justify-start items-start gap-0.5  pt-6 pr-4 py-4  border-b border-b-gray-800"> 
- <a href="#" className="tweet-avatar img"  >< img  src={item.avatar} alt=""/></a> 
+ <Link to={`/${item.title}`} className="tweet-avatar img"  >< img  src={item.avatar} alt=""/></Link> 
       <div className="flex flex-col gap-2">
       <p className="flex justify-start items-start gap-0.5 text-base" >
    <span className="text-base">{item.title}</span>
