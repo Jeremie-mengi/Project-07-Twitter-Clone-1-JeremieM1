@@ -12,6 +12,7 @@ import { useContext, useState } from "react";
 import { CloneContext } from "../componentContext/cloneContext";
 import { AiOutlineHeart } from "react-icons/ai";
 import { useForm } from "react-hook-form";
+import axios from "axios";
 
 function TweetEditor() {
   const {
@@ -20,11 +21,11 @@ function TweetEditor() {
     formState: { errors },
   } = useForm();
 
-const {tweetPost,setTweetPost}  = useContext(CloneContext);
+const {tweetPost,addTwitters}  = useContext(CloneContext);
 const [inputText, setInputText] = useState('');
 const [FileImage, setFileImage] = useState(null);
 
-const addMyTweet = () =>{
+const addMyTweet = (data) =>{
   if (inputText !== ''){
     const tweetTampon =
       {
@@ -33,7 +34,7 @@ const addMyTweet = () =>{
    titleDetails:"@CNN",
    timeTtweetDetails :"7m",
    avatar :av,
-   text:inputText,
+   text:data.name,
    image:FileImage,
    BoutonTweet : { 
        Icon1 : Buton1,
@@ -48,7 +49,13 @@ const addMyTweet = () =>{
        Icon4 : Buton4
 }
       }
-setTweetPost(e => [tweetTampon, ...tweetPost])
+addTwitters(tweetTampon)
+// setTweetPost(() => {
+//   axios.post("http://localhost:3000/tweets")
+//   .then(response)
+//   return [tweetTampon, ...tweetPost]
+// })
+
 setInputText("");
 setFileImage(null);
   }

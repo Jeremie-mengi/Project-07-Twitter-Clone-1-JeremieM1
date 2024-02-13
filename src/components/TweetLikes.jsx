@@ -24,7 +24,7 @@ function TweetLikes({Icon3}) {
   return (
   <div className=" tweet-action" onClick={SituationCount}>
    {/* <img  src={IcImg} alt="" /> */}
-  <Icon3  onClick={handleclick}  className={`rounded-full   text-xl ${(changeColor===true)? 'bg-red-700':'bg-black-700'}`}/>
+  {/* <Icon3  onClick={handleclick}  className={`rounded-full   text-xl ${(changeColor===true)? 'bg-red-700':'bg-black-700'}`}/> */}
     <span>{Counter}</span>
     </div>
   );
