@@ -2,7 +2,7 @@
  import '../style/App.css';
 import { useState } from 'react';
 
-function TweetLikes({Icon3}) {
+function TweetLikes({IcImg,Number}) {
   const [Counter, setCounter] = useState(0);
   const [Jaime, setjaime] = useState(false);
   const [changeColor, setChangeColor]= useState(false)
@@ -22,11 +22,14 @@ function TweetLikes({Icon3}) {
   }
 
   return (
+    <>
   <div className=" tweet-action" onClick={SituationCount}>
-   {/* <img  src={IcImg} alt="" /> */}
-  {/* <Icon3  onClick={handleclick}  className={`rounded-full   text-xl ${(changeColor===true)? 'bg-red-700':'bg-black-700'}`}/> */}
-    <span>{Counter}</span>
+  <button onClick={handleclick}className={`rounded-full   text-xl ${(changeColor===true)? 'bg-red-700':'bg-black-700'}`}>
+   <p>{IcImg}</p>
+  </button>
     </div>
+  <span className="text-gray-400">{Counter+ Number }</span>
+  </>
   );
 }
 

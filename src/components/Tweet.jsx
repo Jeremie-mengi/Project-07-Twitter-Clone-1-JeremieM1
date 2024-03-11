@@ -3,6 +3,10 @@ import Ver from "../Icons/Verified.png";
 import TweetLikes from "./TweetLikes";
 import { CloneContext } from "../componentContext/cloneContext";
 import { Link } from "react-router-dom";
+import { AiOutlineHeart } from "react-icons/ai";
+import { PiDownloadSimpleLight } from "react-icons/pi";
+import { LiaRetweetSolid } from "react-icons/lia";
+import { FaRegComment } from "react-icons/fa";
 function Tweet(){
     const cont = useContext(CloneContext)
     const tweetEntier = cont.tweetPost.map((item) => (
@@ -22,24 +26,27 @@ function Tweet(){
 
     <div className= "width-full p-[.3rem 0 0 0]"> <img className="rounded-[50px] h-auto  max-width-[100%]    border-solid  " src={item.image} alt=""/>
      </div>
+
 <div className="flex justify-center items-center gap-[5rem] color-[gray] text-base" >
 
 <button  className='flex justify-center items-center gap-[20px] background-[black] color-gray'>
-<img src={item.BoutonTweet.Icon1}  />
-<span className=''>{item.BoutonTweet.Nbre1}</span>
+<TweetLikes IcImg = {< FaRegComment/> }  
+Number= {item.BoutonTweet.Nbre1} fontSize={"18px"}/> 
+</button>
+
+<button  className=' flex justify-center items-center gap-[20px] background-[black] color-gray'>
+<TweetLikes IcImg = {<LiaRetweetSolid/>}  
+Number= {item.BoutonTweet.Nbre2}  fontSize={"18px"}/> 
 </button>
 
 <button  className='flex justify-center items-center gap-[20px] background-[black] color-gray'>
-<img src={item.BoutonTweet.Icon2}  />
-<span className="">{item.BoutonTweet.Nbre2}</span>
-</button>
-{/* <TweetLikes IcImg = {item.BoutonTweet.Icon1}  Nb ={item.BoutonTweet.Nbre2} />
-<TweetLikes IcImg = {item.BoutonTweet.Icon2}  Nb ={item.BoutonTweet.Nbre2} /> */}
-<TweetLikes Icon3 = {item.BoutonTweet.Icon3}  Nb ={item.BoutonTweet.Nbre2} />
-<button  className='flex justify-center items-center gap-[20px] background-[black] color-gray'>
-<img src={item.BoutonTweet.Icon4}  />
+<TweetLikes IcImg = {<AiOutlineHeart/> }  
+Number= {item.BoutonTweet.Nbre3}  fontSize={"18px"} /> 
 </button>
 
+<button  className='flex justify-center items-center gap-[20px] background-[black] '>
+<PiDownloadSimpleLight color="#808080" fontSize={"18px"}/> 
+</button>
 </div>
 </div>
 </div> 
